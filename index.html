@@ -141,6 +141,7 @@
       max-width: 750px;
       z-index: 2;
       animation: fadeInUp 1s ease-out;
+      padding-bottom: 70px;
     }
 
     /* Pill above the brand */
@@ -224,22 +225,26 @@
       max-width: 620px;
     }
 
-    /* Business detail strip */
+    /* Business detail strip — anchored to bottom of hero */
     .biz-strip {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 0;
-      max-width: 720px;
-      margin: 30px 0 36px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 14px;
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      margin: 0;
+      background: rgba(11,11,15,0.75);
+      border-top: 1px solid rgba(255,255,255,0.10);
+      border-radius: 0;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       overflow: hidden;
+      z-index: 3;
     }
     .biz-cell {
-      padding: 16px 18px;
+      padding: 18px 24px;
       border-right: 1px solid rgba(255,255,255,0.08);
     }
     .biz-cell:last-child { border-right: none; }
@@ -262,10 +267,11 @@
     .biz-cell .vsub { font-size: 11px; color: #a0a0b8; margin-top: 2px; font-weight: 500; }
 
     @media (max-width: 720px) {
-      .biz-strip { grid-template-columns: repeat(2, 1fr); }
-      .biz-cell { border-bottom: 1px solid rgba(255,255,255,0.08); }
-      .biz-cell:nth-child(2) { border-right: none; }
-      .biz-cell:nth-last-child(-n+2) { border-bottom: none; }
+      .biz-strip { grid-template-columns: repeat(4, 1fr); }
+      .biz-cell { padding: 12px 10px; border-bottom: none; }
+      .biz-cell .v { font-size: 15px; }
+      .biz-cell .k { font-size: 9px; letter-spacing: 1px; }
+      .biz-cell .vsub { font-size: 10px; }
     }
 
     .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; }
@@ -385,11 +391,21 @@
     @media (max-width: 900px) {
       .location-container { grid-template-columns: 1fr; }
       .nav-links { display: none; }
-      .brand-mark { font-size: clamp(48px, 11vw, 72px); }
-      .hero { background-position: 70% center; padding-top: 110px; padding-bottom: 60px; height: auto; min-height: 100vh; }
+      .brand-mark { font-size: clamp(42px, 10vw, 68px); }
+      .hero { background-position: 70% center; padding-top: 80px; padding-bottom: 70px; height: 100vh; min-height: 100vh; overflow: hidden; }
       .visit-banner { padding: 40px 20px; }
       .visit-banner h2 { font-size: 40px; }
       .map-box iframe { min-height: 300px; }
+    }
+
+    @media (max-width: 500px) {
+      .tagline { font-size: 10px; padding: 6px 12px; margin-bottom: 10px; letter-spacing: 1.5px; }
+      .brand-sub { font-size: 11px; letter-spacing: 2px; margin-bottom: 10px; }
+      .brand-sub::before, .brand-sub::after { flex: 0 0 20px; }
+      .hero h1 { margin-bottom: 10px; }
+      .malayalam-hero { font-size: 14px; margin-bottom: 12px; padding: 5px 0 5px 12px; }
+      .hero-desc { font-size: 14.5px; margin-bottom: 16px; }
+      .hero-btns .btn-call { padding: 12px 24px; font-size: 14px; }
     }
   </style>
 </head>
@@ -420,31 +436,31 @@
 
       <p class="hero-desc">Thrissur's trusted <strong>second-hand two-wheeler dealer</strong> — verified used motorcycles &amp; scooters of every leading brand, with full RTO transfer support and instant spot cash for your old bike.</p>
 
-      <!-- Visible business detail strip -->
-      <div class="biz-strip">
-        <div class="biz-cell">
-          <div class="k">Proprietor</div>
-          <div class="v">Romeo Jose</div>
-        </div>
-        <div class="biz-cell">
-          <div class="k">Call Direct</div>
-          <div class="v">97477 30400</div>
-        </div>
-        <div class="biz-cell">
-          <div class="k">Location</div>
-          <div class="v">Patturaikkal</div>
-          <div class="vsub">Thrissur · 680022</div>
-        </div>
-        <div class="biz-cell">
-          <div class="k">Open</div>
-          <div class="v accent">Mon–Sat</div>
-          <div class="vsub">9 AM – 7 PM</div>
-        </div>
-      </div>
-
       <div class="hero-btns">
         <a href="#location" class="btn-call" style="padding: 14px 35px; font-size: 16px;">VISIT SHOWROOM</a>
         <a href="https://wa.me/919747730400" target="_blank" class="btn-outline">💬 WhatsApp Us</a>
+      </div>
+    </div>
+
+    <!-- Business detail strip — fixed to bottom of hero -->
+    <div class="biz-strip">
+      <div class="biz-cell">
+        <div class="k">Proprietor</div>
+        <div class="v">Romeo Jose</div>
+      </div>
+      <div class="biz-cell">
+        <div class="k">Call Direct</div>
+        <div class="v">97477 30400</div>
+      </div>
+      <div class="biz-cell">
+        <div class="k">Location</div>
+        <div class="v">Patturaikkal</div>
+        <div class="vsub">Thrissur · 680022</div>
+      </div>
+      <div class="biz-cell">
+        <div class="k">Open</div>
+        <div class="v accent">Mon–Sat</div>
+        <div class="vsub">9 AM – 7 PM</div>
       </div>
     </div>
   </section>
