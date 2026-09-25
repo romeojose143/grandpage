@@ -173,6 +173,13 @@
     .contact-copy .phone:hover { text-decoration: underline; }
     .contact-copy .contact-note { color: var(--muted); font-size: 12px; margin-top: 5px; }
     .contact-actions { display: grid; gap: 10px; margin-top: 30px; }
+    .contact-card-heading { margin-bottom: 26px; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+    .contact-card-heading h3 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(23px, 2.5vw, 26px); font-weight: 700; line-height: 1.3; letter-spacing: 0; text-transform: none; }
+    .contact-card-heading p { margin-top: 7px; color: var(--muted); font-size: 12px; }
+    .contact-secondary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .contact-secondary .button { padding-inline: 10px; font-size: 13px; }
+    .contact-secondary .icon { width: 18px; height: 18px; }
+    .contact-download-note { font-size: 12px; color: var(--muted); margin-top: 3px; }
     .map-box { margin: 0; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #1a1c23; }
     .map-box iframe { display: block; width: 100%; flex: 1; min-height: 350px; border: 0; background: #20232b; }
     .map-box figcaption { padding: 14px 20px; color: var(--muted); font-size: 12px; }
@@ -241,6 +248,7 @@
       .business-cell { padding: 15px 12px; }
       .business-value { font-size: 14px; }
       .contact-panel { padding: 22px 18px; }
+      .contact-secondary { grid-template-columns: 1fr; }
       .contact-item { gap: 12px; }
       address, .contact-copy p { font-size: 14px; }
       .visit-banner .button { width: 100%; }
@@ -257,6 +265,7 @@
       <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
       <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
       <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="icon-save-contact" viewBox="0 0 24 24"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M19 10v8m-3-3 3 3 3-3"/></symbol>
       <symbol id="icon-bike" viewBox="0 0 24 24"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="m5 17 4-8h6l4 8M7 12h9l-4 5H5m7-8-1-4H8m7 4 2-4h3"/></symbol>
       <symbol id="icon-cash" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></symbol>
       <symbol id="icon-exchange" viewBox="0 0 24 24"><path d="M3 7h18l-4-4M21 17H3l4 4M21 7l-4 4M3 17l4-4"/></symbol>
@@ -356,6 +365,10 @@
         </div>
         <div class="location-grid">
           <div class="contact-panel">
+            <div class="contact-card-heading">
+              <h3>Romeo Jose Used Bike</h3>
+              <p>Buy · Sell · Exchange · Thrissur</p>
+            </div>
             <div class="contact-item">
               <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
               <div class="contact-copy">
@@ -374,7 +387,11 @@
             </div>
             <div class="contact-actions">
               <a class="button button-primary" href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>Open in Google Maps</a>
-              <a class="button button-outline" href="https://wa.me/919747730400" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>WhatsApp Us</a>
+              <div class="contact-secondary">
+                <a class="button button-outline" href="https://wa.me/919747730400" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>WhatsApp</a>
+                <a class="button button-outline" href="./romeo-jose-used-bike.vcf" download="romeo-jose-used-bike.vcf" aria-describedby="contact-download-note"><svg class="icon" aria-hidden="true"><use href="#icon-save-contact"/></svg>Save Contact</a>
+              </div>
+              <p id="contact-download-note" class="contact-download-note">Save as Romeo Jose Used Bike. Open the downloaded file to add the contact.</p>
             </div>
           </div>
           <figure class="map-box">
