@@ -22,7 +22,7 @@
 
   <!-- 🔥 CRITICAL SEO TAGS 🔥 -->
   <title>Used Bikes in Thrissur | Second Hand Two-Wheelers | Grand Auto Garage</title>
-  <meta name="description" content="Looking for the best used bikes in Thrissur? Grand Auto Garage offers top-quality second-hand motorcycles, scooters, spot cash for bikes, and RTO exchange services. Call 9747730400.">
+  <meta name="description" content="Looking for the best used bikes in Thrissur? Grand Auto Garage offers second-hand motorcycles, scooters, spot cash for bikes, and exchange services. Visit our showroom in Patturaikkal. Call 9747730400.">
   <meta name="keywords" content="used bikes thrissur, second hand bikes thrissur, used scooters thrissur, pre-owned motorcycles kerala, buy used bike, sell bike thrissur, second hand two wheeler dealer, grand auto garage">
   <meta name="author" content="Grand Auto Garage">
   
@@ -33,7 +33,7 @@
   
   <!-- Open Graph / WhatsApp Sharing Tags -->
   <meta property="og:title" content="Grand Auto Garage | Used Bikes in Thrissur">
-  <meta property="og:description" content="Buy, sell, or exchange second-hand two-wheelers in Thrissur with 100% transparent RTO documentation.">
+  <meta property="og:description" content="Buy, sell, or exchange used bikes and scooters. Visit Grand Auto Garage opposite Devamatha CMI Public School, Patturaikkal, Thrissur.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_IN">
 
@@ -63,620 +63,359 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Malayalam:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Malayalam:wght@500&display=swap" rel="stylesheet">
   <style>
     :root {
+      color-scheme: dark;
       --primary: #c8102e;
-      --primary-hover: #e81a3a;
-      --dark-bg: #0b0b0f;
-      --card-bg: #16161f;
-      --text-light: #ffffff;
-      --text-muted: #a0a0b8;
-      --border-color: #2a2a3d;
-      --glass-bg: rgba(22, 22, 31, 0.85);
+      --primary-hover: #ad0e28;
+      --accent: #ff7387;
+      --background: #101116;
+      --surface: #1a1c23;
+      --text: #fafafb;
+      --muted: #bfc1cc;
+      --border: #343640;
+      --radius: 16px;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: var(--dark-bg);
-      color: var(--text-light);
-      overflow-x: hidden;
-      line-height: 1.6;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 110px; }
+    body { margin: 0; background: var(--background); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.65; }
+    h1, h2, h3, p { margin: 0; }
+    a { color: inherit; text-underline-offset: 4px; }
+    button, summary, a { -webkit-tap-highlight-color: transparent; }
+    a, summary { touch-action: manipulation; }
+    :focus-visible { outline: 3px solid #ffd27a; outline-offset: 5px; }
+    .container { width: min(1120px, 90%); margin-inline: auto; }
+    .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
+    .icon-library { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .skip-link { position: fixed; top: 8px; left: 8px; padding: 12px 20px; background: white; color: #101116; z-index: 100; transform: translateY(-160%); }
+    .skip-link:focus { transform: translateY(0); }
 
-    html { scroll-behavior: smooth; }
+    /* Solid, stable navigation: no scroll listener or backdrop blur. */
+    .site-header { position: sticky; top: 0; z-index: 20; background: #101116; border-bottom: 1px solid var(--border); }
+    .header-inner { min-height: 84px; display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+    .logo { display: inline-flex; flex-direction: column; text-decoration: none; flex: 0 0 auto; }
+    .logo-main { font-family: 'Bebas Neue', sans-serif; font-size: 29px; letter-spacing: 1px; line-height: 1; }
+    .logo-main span { color: var(--accent); }
+    .logo-sub { margin-top: 6px; font-size: 10px; font-weight: 700; letter-spacing: 4px; line-height: 1; }
+    .desktop-nav { display: flex; gap: 28px; align-items: center; }
+    .nav-link { font-size: 13px; font-weight: 700; text-decoration: none; padding-block: 12px; }
+    .nav-link:hover { color: var(--accent); }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 13px 24px; border: 1px solid transparent; border-radius: 8px; font-size: 14px; font-weight: 700; text-decoration: none; text-align: center; transition: background-color .18s ease, border-color .18s ease; }
+    .button-primary { background: var(--primary); color: white; }
+    .button-primary:hover { background: var(--primary-hover); }
+    .button-outline { border-color: #757782; background: #17191fe6; color: white; }
+    .button-outline:hover { background: #2a2c34; border-color: #bfc1cc; }
+    .button-light { background: white; color: #9a0c24; }
+    .button-light:hover { background: #fff0f3; }
+    .mobile-menu { display: none; position: relative; }
+    .mobile-menu summary { min-height: 44px; display: flex; align-items: center; gap: 10px; list-style: none; padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; }
+    .mobile-menu summary::-webkit-details-marker { display: none; }
+    .mobile-menu[open] summary { border-color: var(--accent); }
+    .mobile-menu nav { position: absolute; right: 0; top: calc(100% + 12px); width: 240px; padding: 8px; border: 1px solid var(--border); border-radius: 12px; background: #1a1c23; box-shadow: 0 12px 24px #0005; }
+    .mobile-menu nav a { display: block; padding: 13px 16px; font-size: 14px; text-decoration: none; border-radius: 6px; }
+    .mobile-menu nav a:hover { background: #292c35; }
 
-    /* --- Navigation --- */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 15px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(11, 11, 15, 0.9);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      border-bottom: 1px solid rgba(200, 16, 46, 0.2);
-      z-index: 1000;
-      transition: padding 0.3s ease;
-    }
-    
-    .logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 28px;
-      color: var(--text-light);
-      text-decoration: none;
-      letter-spacing: 1.5px;
-    }
-    .logo span { color: var(--primary); }
+    /* Keep the original photograph, with a readable overlay and natural height. */
+    .hero { background-image: linear-gradient(90deg, rgba(11,11,15,.92), rgba(11,11,15,.73) 50%, rgba(11,11,15,.50)), url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1920&q=80'); background-position: center; background-repeat: no-repeat; background-size: cover; }
+    .hero-content { padding-block: 76px 68px; max-width: 900px; text-align: center; }
+    .eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); }
+    .hero .eyebrow { display: inline-block; padding: 7px 16px; margin-bottom: 24px; border: 1px solid #ffffff40; border-radius: 30px; color: #fff; background: #10111699; }
+    .hero h1 { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: clamp(58px, 9vw, 110px); line-height: .98; letter-spacing: 1.5px; }
+    .hero h1 span { color: var(--accent); }
+    .hero-subtitle { margin-top: 18px; font-size: clamp(18px, 2.6vw, 25px); font-weight: 700; line-height: 1.4; }
+    .hero-description { max-width: 570px; margin: 14px auto 0; color: #dadbe2; font-size: 15px; }
+    .hero-actions { margin-top: 30px; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+    .hero-landmark { margin-top: 24px; display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 12px; color: #e0e1e8; }
+    .hero-landmark .icon { width: 17px; height: 17px; }
+    .business-strip { background: #181a21; border-bottom: 1px solid var(--border); }
+    .business-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .business-cell { min-width: 0; padding: 22px 24px; border-left: 1px solid var(--border); }
+    .business-cell:first-child { border-left: 0; }
+    .business-label { display: block; color: var(--muted); font-size: 10px; letter-spacing: 1.3px; text-transform: uppercase; font-weight: 700; }
+    .business-value { display: block; margin-top: 4px; font-size: 16px; font-weight: 700; text-decoration: none; }
+    a.business-value:hover { text-decoration: underline; }
+    .business-note { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }
 
-    .nav-links { display: flex; gap: 30px; align-items: center; }
-    .nav-links a {
-      color: var(--text-light);
-      text-decoration: none;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--primary); }
+    .section { padding-block: 76px; }
+    .section-heading { margin-bottom: 32px; max-width: 740px; }
+    .section-heading h2, .visit-copy h2, .location-heading h2 { margin-top: 8px; font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 4.8vw, 52px); font-weight: 400; line-height: 1.08; letter-spacing: .8px; }
+    .malayalam { font-family: 'Noto Sans Malayalam', sans-serif; line-height: 1.95; font-weight: 500; }
+    .section-heading .malayalam { margin-top: 18px; font-size: 17px; color: var(--muted); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    .service-card { padding: 30px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+    .service-icon { width: 48px; height: 48px; display: grid; place-items: center; margin-bottom: 24px; background: #c8102e22; color: var(--accent); border-radius: 12px; }
+    .service-card h3 { font-size: 20px; line-height: 1.4; margin-bottom: 10px; }
+    .service-card p { font-size: 14px; color: var(--muted); }
 
-    .btn-call {
-      background: var(--primary);
-      color: white;
-      padding: 10px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      transition: 0.3s;
-      box-shadow: 0 4px 15px rgba(200, 16, 46, 0.3);
-    }
-    .btn-call:hover { background: var(--primary-hover); transform: translateY(-2px); }
+    .visit-section { padding-block: 0 76px; }
+    .visit-banner { padding: 40px; display: flex; justify-content: space-between; align-items: center; gap: 36px; background: #ac102c; border: 1px solid #dc3853; border-radius: var(--radius); }
+    .visit-copy { max-width: 660px; }
+    .visit-copy .eyebrow { color: #ffe5eb; }
+    .visit-copy p { max-width: 540px; color: #fff0f3; font-size: 15px; margin-top: 14px; }
+    .visit-banner .button { flex: 0 0 auto; }
 
-    /* --- Parallax Hero --- */
-    .hero {
-      position: relative;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 5%;
-      background-image: linear-gradient(90deg, rgba(11, 11, 15, 0.95) 10%, rgba(11, 11, 15, 0.4) 60%, rgba(11, 11, 15, 0.1) 100%), url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1920&q=80');
-      background-attachment: fixed; 
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    .location-section { border-top: 1px solid var(--border); background: #15171d; }
+    .location-heading { margin-bottom: 32px; }
+    .location-heading > p:last-child { margin-top: 14px; font-size: 15px; color: var(--muted); }
+    .location-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 24px; align-items: stretch; }
+    .contact-panel { padding: 32px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); min-width: 0; }
+    .contact-item { display: flex; align-items: flex-start; gap: 16px; }
+    .contact-item + .contact-item { margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--border); }
+    .contact-item > .icon { margin-top: 3px; color: var(--accent); }
+    .contact-copy { min-width: 0; }
+    .contact-copy h3 { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
+    address { font-style: normal; font-size: 16px; }
+    .contact-copy .malayalam { font-size: 13px; color: #dddfe7; margin-top: 8px; }
+    .contact-copy p { font-size: 16px; }
+    .contact-copy .phone { font-size: clamp(17px, 2.1vw, 23px); font-weight: 700; text-decoration: none; }
+    .contact-copy .phone:hover { text-decoration: underline; }
+    .contact-copy .contact-note { color: var(--muted); font-size: 12px; margin-top: 5px; }
+    .contact-actions { display: grid; gap: 10px; margin-top: 30px; }
+    .map-box { margin: 0; min-width: 0; display: flex; flex-direction: column; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #1a1c23; }
+    .map-box iframe { display: block; width: 100%; flex: 1; min-height: 350px; border: 0; background: #20232b; }
+    .map-box figcaption { padding: 14px 20px; color: var(--muted); font-size: 12px; }
+    .map-box figcaption a { color: white; }
+    .site-footer { padding-block: 28px; border-top: 1px solid var(--border); color: var(--muted); font-size: 12px; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .footer-name { color: white; font-weight: 700; }
+    .footer-inner p + p { margin-top: 4px; }
+    .footer-inner > a { min-height: 44px; display: inline-flex; align-items: center; gap: 8px; }
 
-    .hero-content {
-      max-width: 820px;
-      width: 100%;
-      z-index: 2;
-      padding-bottom: 70px;
-      text-align: center;
-      margin: 0 auto;
+    .mobile-contact-bar { display: none; }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-content { animation: intro-in .45s ease-out both; }
+      @keyframes intro-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     }
-
-    /* Pill above the brand */
-    .tagline {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      color: #fff;
-      font-weight: 700;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-size: 12px;
-      margin-bottom: 22px;
-      background: rgba(200, 16, 46, 0.18);
-      border: 1px solid rgba(200, 16, 46, 0.45);
-      padding: 8px 18px;
-      border-radius: 30px;
-      animation: taglineSlide 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
     }
-    .tagline::before {
-      content: "";
-      width: 8px; height: 8px; border-radius: 50%;
-      background: #ff4d62;
-      box-shadow: 0 0 0 4px rgba(255, 77, 98, 0.25);
-    }
-
-    /* Brandmark — the actual business name, big and clear */
-    .brand-mark {
-      font-family: 'Anton', sans-serif;
-      font-weight: 400;
-      font-size: clamp(56px, 8.5vw, 112px);
-      line-height: 0.92;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 6px;
-      animation: enter3D 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both, brandFloat 5s ease-in-out 1.3s infinite;
-      text-shadow: 0 12px 40px rgba(200, 16, 46, 0.35);
-    }
-    .brand-mark .accent { color: var(--primary); }
-    .brand-sub {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: clamp(15px, 1.4vw, 18px);
-      font-weight: 600;
-      letter-spacing: 6px;
-      text-transform: uppercase;
-      color: #fff;
-      margin-bottom: 24px;
-      display: flex; align-items: center; justify-content: center; gap: 14px;
-      animation: enter3D 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
-    }
-    .brand-sub::before, .brand-sub::after {
-      content: ""; flex: 0 0 40px; height: 2px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6));
-    }
-    .brand-sub::after { background: linear-gradient(90deg, rgba(255,255,255,0.6), transparent); }
-
-    /* Headline (kept smaller — brand is now the star) */
-    .hero h1 {
-      font-family: 'Anton', sans-serif;
-      font-weight: 400;
-      font-size: clamp(28px, 3.4vw, 44px);
-      line-height: 1.05;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-      color: #f3f3f3;
-      animation: enter3D 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
-    }
-    .hero h1 span { color: var(--primary); }
-
-    .malayalam-hero {
-      font-family: 'Noto Sans Malayalam', 'Plus Jakarta Sans', sans-serif;
-      font-size: 22px;
-      line-height: 1.7;
-      color: #e8e8ee;
-      font-weight: 500;
-      margin: 0 auto 24px;
-      text-align: center;
-      max-width: 720px;
-    }
-
-    .hero-desc {
-      font-size: 17px;
-      color: #cfcfd8;
-      margin: 0 auto;
-      max-width: 700px;
-      text-align: center;
-      line-height: 1.9;
-    }
-
-    /* Business detail strip — anchored to bottom of hero */
-    .biz-strip {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 0;
-      margin: 0;
-      background: rgba(11,11,15,0.75);
-      border-top: 1px solid rgba(255,255,255,0.10);
-      border-radius: 0;
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      overflow: hidden;
-      z-index: 3;
-    }
-    .biz-cell {
-      padding: 18px 24px;
-      border-right: 1px solid rgba(255,255,255,0.08);
-    }
-    .biz-cell:last-child { border-right: none; }
-    .biz-cell .k {
-      font-size: 10.5px;
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
-      color: #8e8ea3;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .biz-cell .v {
-      font-family: 'Anton', sans-serif;
-      font-size: 22px;
-      letter-spacing: 0.5px;
-      color: #fff;
-      line-height: 1.1;
-    }
-    .biz-cell .v.accent { color: var(--primary); }
-    .biz-cell .vsub { font-size: 11px; color: #a0a0b8; margin-top: 2px; font-weight: 500; }
-
-    @media (max-width: 720px) {
-      .biz-strip { grid-template-columns: repeat(4, 1fr); }
-      .biz-cell { padding: 12px 10px; border-bottom: none; }
-      .biz-cell .v { font-size: 15px; }
-      .biz-cell .k { font-size: 9px; letter-spacing: 1px; }
-      .biz-cell .vsub { font-size: 10px; }
-    }
-
-    .hero-btns { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; animation: enter3D 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.75s both; }
-    .btn-outline {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      color: white;
-      padding: 12px 28px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-    .btn-outline:hover { background: rgba(255, 255, 255, 0.1); border-color: white; transform: translateY(-2px); }
-
-    /* --- Sections & Layout --- */
-    section { padding: 90px 5%; }
-    .section-header { text-align: center; margin-bottom: 50px; }
-    .section-title { font-family: 'Bebas Neue', sans-serif; font-size: 45px; letter-spacing: 1.5px; }
-    .section-title span { color: var(--primary); }
-    .section-subtitle { color: var(--text-muted); font-size: 14px; text-transform: uppercase; letter-spacing: 2px; }
-
-    /* --- Why Visit Us Grid --- */
-    .features-section { background-color: #0f0f14; border-top: 1px solid var(--border-color); }
-    .tool-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .glass-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border-color);
-      border-radius: 16px;
-      padding: 40px;
-      text-align: center;
-      transition: 0.4s;
-    }
-    .glass-card:hover { border-color: var(--primary); transform: translateY(-8px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
-    .card-icon { font-size: 45px; margin-bottom: 20px; display: inline-block; background: rgba(200, 16, 46, 0.1); padding: 15px; border-radius: 50%; }
-    .glass-card h3 { font-size: 22px; margin-bottom: 10px; }
-    .glass-card p { color: var(--text-muted); font-size: 14.5px; }
-
-    /* --- The Big Visit Banner --- */
-    .visit-section { background: var(--dark-bg); }
-    .visit-banner {
-      background: linear-gradient(135deg, var(--primary) 0%, #7e0a1d 100%);
-      padding: 60px 40px;
-      border-radius: 20px;
-      text-align: center;
-      max-width: 1000px;
-      margin: 0 auto;
-      box-shadow: 0 20px 40px rgba(200, 16, 46, 0.3);
-    }
-    .visit-banner h2 { font-family: 'Bebas Neue', sans-serif; font-size: 55px; margin-bottom: 10px; color: white; letter-spacing: 1px; }
-    .visit-banner p { font-size: 18px; color: rgba(255,255,255,0.9); margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
-    
-    .perks-list {
-      display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-bottom: 35px;
-    }
-    .perks-list span {
-      background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.2);
-      padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 14px;
-    }
-
-    /* --- Highly Emphasized Location --- */
-    .location-section { background: #0f0f14; border-top: 1px solid var(--border-color); }
-    .location-container {
-      display: grid;
-      grid-template-columns: 1fr 1.2fr;
-      gap: 40px;
-      max-width: 1200px;
-      margin: 0 auto;
-      align-items: stretch;
-    }
-    .info-panel {
-      background: var(--glass-bg);
-      padding: 50px;
-      border-radius: 20px;
-      border: 1px solid var(--border-color);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-    .info-item { margin-bottom: 35px; display: flex; gap: 20px; align-items: flex-start; }
-    .i-icon { font-size: 32px; background: rgba(200, 16, 46, 0.1); padding: 12px; border-radius: 10px; border: 1px solid rgba(200, 16, 46, 0.2); }
-    .i-text h4 { font-size: 11px; text-transform: uppercase; color: var(--text-muted); letter-spacing: 2px; margin-bottom: 5px; }
-    .i-text p { font-size: 18px; font-weight: 500; line-height: 1.4; }
-    .i-text span.sub-text { display: block; font-size: 14px; color: var(--primary); margin-top: 5px; font-weight: 600; }
-
-    .map-box { 
-      border-radius: 20px; 
-      overflow: hidden; 
-      border: 2px solid var(--border-color); 
-      transition: 0.3s;
-    }
-    .map-box:hover { border-color: var(--primary); box-shadow: 0 0 20px rgba(200, 16, 46, 0.2); }
-    .map-box iframe { width: 100%; height: 100%; min-height: 450px; border: none; }
-
-    /* --- Floating WhatsApp & Footer --- */
-    .wa-float {
-      position: fixed; bottom: 25px; right: 25px; background: #25D366; width: 65px; height: 65px;
-      border-radius: 50%; display: flex; align-items: center; justify-content: center;
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 1500; text-decoration: none;
-      transition: transform 0.3s;
-    }
-    .wa-float:hover { transform: scale(1.1) rotate(10deg); }
-    .wa-float svg { width: 35px; height: 35px; fill: white; }
-    
-    footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 13px; border-top: 1px solid var(--border-color); background: var(--dark-bg); }
-
-    /* --- Hero Intro Section --- */
-    .hero-intro {
-      background: var(--dark-bg);
-      padding: 90px 5% 80px;
-      text-align: center;
-      position: relative;
-      border-bottom: 1px solid var(--border-color);
-    }
-    .hero-intro::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 50%; transform: translateX(-50%);
-      width: 2px; height: 70px;
-      background: linear-gradient(180deg, var(--primary) 0%, transparent 100%);
-    }
-    .hero-intro-inner {
-      max-width: 820px;
-      margin: 0 auto;
-    }
-    .hero-intro-label {
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--primary);
-      font-weight: 700;
-      margin-bottom: 28px;
-      display: block;
-    }
-    .hero-intro .malayalam-hero { font-size: 22px; margin-bottom: 28px; }
-    .hero-intro .hero-desc { font-size: 17px; }
-
-    /* --- Animations & Responsive --- */
-    @keyframes taglineSlide {
-      from { opacity: 0; transform: translateY(-18px) scale(0.92); filter: blur(2px); }
-      to   { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
-    }
-    @keyframes enter3D {
-      from {
-        opacity: 0;
-        transform: perspective(1200px) rotateX(35deg) translateZ(-100px) translateY(40px);
-        filter: blur(4px);
-      }
-      to {
-        opacity: 1;
-        transform: perspective(1200px) rotateX(0deg) translateZ(0) translateY(0);
-        filter: blur(0);
-      }
-    }
-    @keyframes brandFloat {
-      0%, 100% { transform: translateY(0px); text-shadow: 0 12px 40px rgba(200,16,46,0.35); }
-      50%       { transform: translateY(-8px); text-shadow: 0 24px 65px rgba(200,16,46,0.6), 0 0 90px rgba(200,16,46,0.2); }
-    }
-    @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-    .reveal { opacity: 0; transform: translateY(40px); transition: 0.8s ease-out; }
-    .reveal.active { opacity: 1; transform: translateY(0); }
-
     @media (max-width: 900px) {
-      .location-container { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-      .brand-mark { font-size: clamp(42px, 10vw, 68px); }
-      .hero { background-position: 70% center; padding-top: 80px; padding-bottom: 70px; height: 100vh; min-height: 100vh; overflow: hidden; }
-      .visit-banner { padding: 40px 20px; }
-      .visit-banner h2 { font-size: 40px; }
-      .map-box iframe { min-height: 300px; }
+      .desktop-nav { display: none; }
+      .mobile-menu { display: block; }
+      .header-inner { min-height: 76px; }
+      .hero-content { padding-block: 60px 52px; }
+      .business-cell { padding: 20px 16px; }
+      .business-value { font-size: 14px; }
+      .service-card { padding: 24px; }
+      .visit-banner { align-items: flex-start; flex-direction: column; gap: 24px; }
+      .location-grid { grid-template-columns: 1fr; }
+      .map-box iframe { height: 340px; flex: none; }
+      body { padding-bottom: calc(74px + env(safe-area-inset-bottom, 0px)); }
+      html { scroll-padding-top: 96px; scroll-padding-bottom: calc(90px + env(safe-area-inset-bottom, 0px)); }
+      .mobile-contact-bar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); position: fixed; inset: auto 0 0; z-index: 30; padding: 8px 12px calc(8px + env(safe-area-inset-bottom, 0px)); gap: 8px; border-top: 1px solid #454752; background: #101116; }
+      .mobile-contact-bar a { min-height: 56px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px; border-radius: 8px; text-decoration: none; font-size: 11px; font-weight: 700; line-height: 1.2; }
+      .mobile-contact-bar a:hover { background: #292c35; }
+      .mobile-contact-bar .directions { background: var(--primary); color: #fff; }
+      .mobile-contact-bar .directions:hover { background: var(--primary-hover); }
     }
-
-    @media (max-width: 500px) {
-      .tagline { font-size: 10px; padding: 6px 12px; margin-bottom: 10px; letter-spacing: 1.5px; }
-      .brand-sub { font-size: 11px; letter-spacing: 2px; margin-bottom: 10px; }
-      .brand-sub::before, .brand-sub::after { flex: 0 0 20px; }
-      .hero h1 { margin-bottom: 20px; font-size: clamp(22px, 5.5vw, 34px); }
-      .hero-btns .btn-call { padding: 12px 24px; font-size: 14px; }
-      .hero-intro .malayalam-hero { font-size: 18px; }
-      .hero-intro .hero-desc { font-size: 15px; }
+    @media (max-width: 700px) {
+      .business-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .business-cell { padding: 16px; }
+      .business-cell:nth-child(3) { border-left: 0; }
+      .business-cell:nth-child(n + 3) { border-top: 1px solid var(--border); }
+      .business-value { font-size: 15px; }
+      .services-grid { grid-template-columns: 1fr; gap: 14px; }
+      .service-icon { margin-bottom: 16px; }
+      .section { padding-block: 48px; }
+      .section-heading .malayalam { font-size: 15px; }
+      .visit-section { padding-bottom: 48px; }
+      .visit-banner { padding: 28px 24px; }
+      .contact-panel { padding: 24px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; gap: 10px; }
+    }
+    @media (max-width: 420px) {
+      .logo-main { font-size: 26px; }
+      .logo-sub { font-size: 9px; letter-spacing: 3.5px; }
+      .hero-content { padding-block: 44px 40px; }
+      .hero h1 { font-size: 58px; }
+      .hero h1 span { display: block; }
+      .hero .eyebrow { font-size: 10px; letter-spacing: 2px; margin-bottom: 20px; }
+      .hero-description { font-size: 14px; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .button { width: 100%; }
+      .hero-landmark { font-size: 11px; align-items: flex-start; }
+      .hero-landmark .icon { margin-top: 2px; }
+      .business-cell { padding: 15px 12px; }
+      .business-value { font-size: 14px; }
+      .contact-panel { padding: 22px 18px; }
+      .contact-item { gap: 12px; }
+      address, .contact-copy p { font-size: 14px; }
+      .visit-banner .button { width: 100%; }
     }
   </style>
 </head>
-<body>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24"><path d="m7 3 3 5-3 3a15 15 0 0 0 6 6l3-3 5 3-1 4C10 22 2 14 3 4Z"/></symbol>
+      <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M21 11.5a9 9 0 0 1-9 9 10 10 0 0 1-4-.8L3 21l1.3-5a9 9 0 1 1 16.7-4.5Z"/><path d="m8 7 2 3-1 1a9 9 0 0 0 4 4l1-1 3 2"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+      <symbol id="icon-bike" viewBox="0 0 24 24"><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="m5 17 4-8h6l4 8M7 12h9l-4 5H5m7-8-1-4H8m7 4 2-4h3"/></symbol>
+      <symbol id="icon-cash" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></symbol>
+      <symbol id="icon-exchange" viewBox="0 0 24 24"><path d="M3 7h18l-4-4M21 17H3l4 4M21 7l-4 4M3 17l4-4"/></symbol>
+    </defs>
+  </svg>
 
-  <!-- Navigation -->
-  <nav id="navbar">
-    <a href="#" class="logo"><span>GRAND</span> AUTO GARAGE</a>
-    <div class="nav-links">
-      <a href="#services">Why Us</a>
-      <a href="#location">Find Our Shop</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Grand Auto Garage home">
+        <span class="logo-main"><span>GRAND</span> AUTO</span>
+        <span class="logo-sub">GARAGE · THRISSUR</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-link" href="#services">Buy · Sell · Exchange</a>
+        <a class="nav-link" href="#location">Visit our showroom</a>
+        <a class="button button-primary" href="tel:+919747730400"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>97477 30400</a>
+      </nav>
+      <details class="mobile-menu">
+        <summary><svg class="icon" aria-hidden="true"><use href="#icon-menu"/></svg>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="#services">Buy · Sell · Exchange</a>
+          <a href="#location">Visit our showroom</a>
+          <a href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer">Get directions</a>
+        </nav>
+      </details>
     </div>
-    <a href="tel:+919747730400" class="btn-call">📞 CALL 97477 30400</a>
-  </nav>
+  </header>
 
-  <!-- Parallax Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="tagline">Thrissur · Patturaikkal · Since Decades</div>
-
-      <!-- The actual business name, made unmistakable -->
-      <div class="brand-mark">GRAND AUTO <span class="accent">GARAGE</span></div>
-      <div class="brand-sub">Used Two-Wheelers · Thrissur</div>
-
-      <h1>Buy · Sell · Exchange used bikes &amp; scooters in <span>Thrissur</span></h1>
-
-      <div class="hero-btns">
-        <a href="#location" class="btn-call" style="padding: 14px 35px; font-size: 16px;">VISIT SHOWROOM</a>
-        <a href="https://wa.me/919747730400" target="_blank" rel="noopener noreferrer" class="btn-outline">💬 WhatsApp Us</a>
-      </div>
-    </div>
-
-    <!-- Business detail strip — fixed to bottom of hero -->
-    <div class="biz-strip">
-      <div class="biz-cell">
-        <div class="k">Proprietor</div>
-        <div class="v">Romeo Jose</div>
-      </div>
-      <div class="biz-cell">
-        <div class="k">Call Direct</div>
-        <div class="v">97477 30400</div>
-      </div>
-      <div class="biz-cell">
-        <div class="k">Location</div>
-        <div class="v">Patturaikkal</div>
-        <div class="vsub">Thrissur · 680022</div>
-      </div>
-      <div class="biz-cell">
-        <div class="k">Open</div>
-        <div class="v accent">Mon–Sat</div>
-        <div class="vsub">9 AM – 7 PM</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hero Intro — Moved from hero for breathing room -->
-  <section class="hero-intro reveal">
-    <div class="hero-intro-inner">
-      <span class="hero-intro-label">About Us</span>
-      <p class="malayalam-hero">പഴയ ടൂവീലർ വാഹനങ്ങൾ വാങ്ങുവാനും വിൽക്കുവാനും സമീപിക്കുക. എക്സ്ചേഞ്ച് സൗകര്യം ലഭ്യമാണ്.</p>
-      <p class="hero-desc">Thrissur's trusted <strong>second-hand two-wheeler dealer</strong> — verified used motorcycles &amp; scooters of every leading brand, with full RTO transfer support and instant spot cash for your old bike.</p>
-    </div>
-  </section>
-
-  <!-- Why Visit Us Section -->
-  <section id="services" class="features-section">
-    <div class="section-header reveal">
-      <div class="section-subtitle">Premium Services</div>
-      <h2 class="section-title">WHY CHOOSE <span>GRAND AUTO GARAGE</span></h2>
-    </div>
-    <div class="tool-grid reveal">
-      <div class="glass-card">
-        <div class="card-icon">🏍️</div>
-        <h3>Verified Used Bikes</h3>
-        <p>Every pre-owned scooter and motorcycle we sell goes through a strict quality inspection to ensure you get a reliable, road-ready ride.</p>
-      </div>
-      <div class="glass-card">
-        <div class="card-icon">💰</div>
-        <h3>Spot Cash & Buying</h3>
-        <p>Looking to sell your bike in Thrissur? Bring it in for a quick, hassle-free evaluation and walk out with instant spot cash payment.</p>
-      </div>
-      <div class="glass-card">
-        <div class="card-icon">🔄</div>
-        <h3>Exchange & RTO</h3>
-        <p>Trade in your old ride for an upgrade. We handle all the tedious RTO paperwork and RC transfers safely and legally.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Visit Shop Call To Action Banner -->
-  <section class="visit-section">
-    <div class="visit-banner reveal">
-      <h2>SEE IT. RIDE IT. OWN IT.</h2>
-      <p>Because we offer the best deals on <strong>used bikes in Thrissur</strong>, our vehicles sell fast! Visit our showroom in person to see the latest arrivals, inspect the vehicles, and take a test drive.</p>
-      
-      <div class="perks-list">
-        <span>✅ Best Market Prices</span>
-        <span>✅ Transparent Deals</span>
-        <span>✅ All Leading Brands</span>
-      </div>
-
-      <a href="#location" class="btn-outline" style="background: white; color: var(--primary); border-color: white; padding: 14px 40px; font-size: 16px;">GET DIRECTIONS TO SHOP</a>
-    </div>
-  </section>
-
-  <!-- Highly Emphasized Location Section -->
-  <section id="location" class="location-section">
-    <div class="section-header reveal">
-      <div class="section-subtitle">We Are Here To Help</div>
-      <h2 class="section-title">COME AND <span>VISIT US</span></h2>
-    </div>
-    
-    <div class="location-container reveal">
-      
-      <!-- Contact Info Panel -->
-      <div class="info-panel">
-        <div class="info-item">
-          <div class="i-icon">👤</div>
-          <div class="i-text">
-            <h4>Proprietor</h4>
-            <p style="font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: var(--primary); letter-spacing: 1px;">ROMEO JOSE</p>
-            <span class="sub-text">Second Hand Vehicle Dealer</span>
-          </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <p class="eyebrow">Buy · Sell · Exchange</p>
+        <h1 id="hero-title">GRAND AUTO <span>GARAGE</span></h1>
+        <p class="hero-subtitle">Used bikes &amp; scooters in Thrissur</p>
+        <p class="hero-description">Visit our showroom, see the bikes in person, and find the right ride for you.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#location">Visit Showroom<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+          <a class="button button-outline" href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>Get Directions</a>
         </div>
-        
-        <div class="info-item">
-          <div class="i-icon">📍</div>
-          <div class="i-text">
-            <h4>Showroom Address</h4>
-            <p>Opp. Devamatha CMI Public School,<br>Patturaikkal Shoranur Road,<br>Thrissur - 680022</p>
-            <span class="sub-text" style="color: #a0a0b8; font-weight: normal;">ദേവമാതാ സ്കൂളിന് എതിർവശം</span>
-          </div>
-        </div>
-        
-        <div class="info-item">
-          <div class="i-icon">📞</div>
-          <div class="i-text">
-            <h4>Direct Contact</h4>
-            <p><a href="tel:+919747730400" style="color: white; text-decoration: none; font-size: 24px; font-weight: 700;">+91 97477 30400</a></p>
-          </div>
-        </div>
-
-        <a href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer" class="btn-call" style="display: block; text-align: center; margin-top: 40px; padding: 15px;">📍 OPEN IN GOOGLE MAPS</a>
+        <p class="hero-landmark"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>Opp. Devamatha CMI Public School · Patturaikkal</p>
       </div>
+    </section>
 
-      <!-- Google Maps Embed -->
-      <div class="map-box">
-        <iframe src="https://maps.google.com/maps?q=Second+Hand+Bikes+And+Car+Patturaikkal+Shoranur+Road+Thrissur+Kerala+680022&t=&z=16&ie=UTF8&iwloc=&output=embed" title="Grand Auto Garage location on Google Maps" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <div class="business-strip" aria-label="Showroom information">
+      <div class="container business-grid">
+        <div class="business-cell"><span class="business-label">Find us</span><a class="business-value" href="#location">Patturaikkal</a><span class="business-note">Thrissur · 680022</span></div>
+        <div class="business-cell"><span class="business-label">Visit us</span><span class="business-value">Monday–Saturday</span><span class="business-note">Showroom days</span></div>
+        <div class="business-cell"><span class="business-label">Opening hours</span><span class="business-value">9 AM – 7 PM</span><span class="business-note">Plan your visit</span></div>
+        <div class="business-cell"><span class="business-label">Call directly</span><a class="business-value" href="tel:+919747730400">97477 30400</a><span class="business-note">We’re happy to help</span></div>
       </div>
-
     </div>
-  </section>
 
-  <!-- Floating WhatsApp Icon -->
-  <a href="https://wa.me/919747730400" target="_blank" rel="noopener noreferrer" class="wa-float" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 32 32"><path d="M16 0C7.16 0 0 7.16 0 16c0 2.82.74 5.58 2.14 8L.07 32l8.17-2.14A15.93 15.93 0 0016 32c8.84 0 16-7.16 16-16S24.84 0 16 0zm0 29.3a13.2 13.2 0 01-6.75-1.85l-.48-.29-5.01 1.31 1.34-4.89-.32-.5A13.2 13.2 0 012.71 16C2.71 8.67 8.67 2.71 16 2.71S29.29 8.67 29.29 16 23.33 29.3 16 29.3zm7.29-9.95c-.4-.2-2.36-1.17-2.73-1.3-.37-.13-.63-.2-.9.2s-1.03 1.3-1.27 1.57c-.23.27-.47.3-.87.1-.4-.2-1.69-.62-3.22-1.98-1.19-1.06-1.99-2.37-2.22-2.77-.23-.4-.03-.62.18-.82.18-.18.4-.47.6-.7.2-.23.27-.4.4-.67.13-.27.07-.5-.03-.7-.1-.2-.9-2.17-1.23-2.97-.33-.78-.65-.67-.9-.69l-.77-.01c-.27 0-.7.1-1.07.5s-1.4 1.37-1.4 3.33 1.43 3.87 1.63 4.13c.2.27 2.82 4.31 6.84 6.04.96.41 1.7.66 2.28.84.96.31 1.83.26 2.52.16.77-.12 2.36-.97 2.7-1.9.33-.93.33-1.73.23-1.9-.1-.17-.37-.27-.77-.47z"/></svg>
-  </a>
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">At our showroom</p>
+          <h2 id="services-title">BUY. SELL. EXCHANGE.</h2>
+          <p class="malayalam" lang="ml">പഴയ ടൂവീലർ വാഹനങ്ങൾ വാങ്ങുവാനും വിൽക്കുവാനും സമീപിക്കുക. എക്സ്ചേഞ്ച് സൗകര്യം ലഭ്യമാണ്.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-bike"/></svg></div>
+            <h3>Buy a used bike</h3>
+            <p>Explore motorcycles and scooters at our showroom. See them up close and speak with us about what suits your needs and budget.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-cash"/></svg></div>
+            <h3>Sell your bike</h3>
+            <p>Bring your two-wheeler to us for an in-person evaluation. Talk to us about selling your bike and our spot cash buying service.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-exchange"/></svg></div>
+            <h3>Exchange your ride</h3>
+            <p>Thinking of an upgrade? Visit with your current bike and discuss exchange options with us at the showroom.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>Searching for "used bikes Thrissur"? You are in the right place.</p>
-    <p>&copy; 2026 Grand Auto Garage — Thrissur. All Rights Reserved.</p>
+    <section class="visit-section" aria-labelledby="visit-title">
+      <div class="container visit-banner">
+        <div class="visit-copy">
+          <p class="eyebrow">Come over. Take a closer look.</p>
+          <h2 id="visit-title">YOUR NEXT RIDE STARTS HERE.</h2>
+          <p>Meet us at Patturaikkal, opposite Devamatha CMI Public School. We’ll help you explore your options in person.</p>
+        </div>
+        <a class="button button-light" href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer">Get Directions<svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section id="location" class="section location-section" aria-labelledby="location-title">
+      <div class="container">
+        <div class="location-heading">
+          <p class="eyebrow">Easy to find in Patturaikkal</p>
+          <h2 id="location-title">VISIT GRAND AUTO GARAGE</h2>
+          <p>Find our address and opening hours below, or call us for help getting here.</p>
+        </div>
+        <div class="location-grid">
+          <div class="contact-panel">
+            <div class="contact-item">
+              <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+              <div class="contact-copy">
+                <h3>Showroom address</h3>
+                <address>Opp. Devamatha CMI Public School,<br>Patturaikkal Shoranur Road,<br>Thrissur – 680022</address>
+                <p class="malayalam" lang="ml">ദേവമാതാ സ്കൂളിന് എതിർവശം</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg>
+              <div class="contact-copy"><h3>Opening hours</h3><p>Monday–Saturday<br><strong>9:00 AM – 7:00 PM</strong></p></div>
+            </div>
+            <div class="contact-item">
+              <svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+              <div class="contact-copy"><h3>Speak with us</h3><a class="phone" href="tel:+919747730400">+91 97477 30400</a><p class="contact-note">Romeo Jose · Proprietor</p></div>
+            </div>
+            <div class="contact-actions">
+              <a class="button button-primary" href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>Open in Google Maps</a>
+              <a class="button button-outline" href="https://wa.me/919747730400" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>WhatsApp Us</a>
+            </div>
+          </div>
+          <figure class="map-box">
+            <iframe src="https://maps.google.com/maps?q=Second+Hand+Bikes+And+Car+Patturaikkal+Shoranur+Road+Thrissur+Kerala+680022&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed" title="Grand Auto Garage location on Google Maps" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <figcaption>Patturaikkal, Thrissur · <a href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer">Open directions in Google Maps</a></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><p class="footer-name">Grand Auto Garage · Thrissur</p><p>&copy; 2026 Grand Auto Garage. All rights reserved.</p></div>
+      <a href="https://wa.me/919747730400" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>Chat on WhatsApp</a>
+    </div>
   </footer>
 
-  <!-- Simple Javascript for Scroll Animations -->
-  <script>
-    // Navbar Shrink Effect
-    window.addEventListener('scroll', () => {
-      const nav = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        nav.style.padding = '10px 5%';
-        nav.style.background = 'rgba(11, 11, 15, 0.95)';
-      } else {
-        nav.style.padding = '15px 5%';
-        nav.style.background = 'rgba(11, 11, 15, 0.9)';
-      }
-    });
+  <nav class="mobile-contact-bar" aria-label="Quick contact">
+    <a href="tel:+919747730400"><svg class="icon" aria-hidden="true"><use href="#icon-phone"/></svg>Call</a>
+    <a href="https://wa.me/919747730400" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-chat"/></svg>WhatsApp</a>
+    <a class="directions" href="https://maps.app.goo.gl/dxxqudqB79ZkRN4i7" target="_blank" rel="noopener noreferrer"><svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>Directions</a>
+  </nav>
 
-    // Scroll Reveal Animation Logic
-    function reveal() {
-      var reveals = document.querySelectorAll(".reveal");
-      for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 100;
-        
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add("active");
+  <script>
+    // Native details keeps the menu usable without JavaScript.
+    const mobileMenu = document.querySelector('.mobile-menu');
+    if (mobileMenu) {
+      mobileMenu.addEventListener('click', (event) => {
+        if (event.target.closest('a')) mobileMenu.open = false;
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && mobileMenu.open) {
+          mobileMenu.open = false;
+          mobileMenu.querySelector('summary').focus();
         }
-      }
+      });
+      document.addEventListener('click', (event) => {
+        if (mobileMenu.open && !mobileMenu.contains(event.target)) mobileMenu.open = false;
+      });
     }
-    
-    window.addEventListener("scroll", reveal);
-    reveal(); 
   </script>
 </body>
 </html>
